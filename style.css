@@ -47,7 +47,7 @@
  }
 
  .profile {
-     width: 70%;
+     width: 30%;
      background-color: white;
      border-radius: 10px;
      padding: 20px;
@@ -61,9 +61,8 @@
      transform: translateY(-5px);
  }
 
-
  .health-box {
-     width: 70%;
+     width: 30%;
      background-color: white;
      border-radius: 10px;
      padding: 20px;
@@ -78,7 +77,7 @@
 
 
  .insurance-box {
-     width: 70%;
+     width: 30%;
      background-color: white;
      border-radius: 10px;
      padding: 20px;
@@ -113,16 +112,8 @@
      padding: 20px;
  }
 
- .container {
-    grid-template-columns: repeat(3, 1fr);
-     display:grid;
-     justify-content: center;
-     flex-wrap: wrap;
-     gap: 20px;
-     padding: auto;
- }
-
- .cards {
+ .cards 
+ {
      width: 300px;
      background-color: white;
      border-radius: 10px;
