@@ -4,7 +4,7 @@
      [
       {
         "src" : "app.py",
-         "use": "@versal/python"
+         "use": "@vercel/python"
       }
 
      ],
