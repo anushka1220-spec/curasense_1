@@ -34,9 +34,8 @@
 
  body {
      font-family: Arial, sans-serif;
-     margin: 0;
-     padding: 0;
-     background-color: #f4f4f4;
+     background-image: url("/static/back2.jpeg"); 
+     background-size: cover;
  }
 
  .navbar {
@@ -46,9 +45,79 @@
      padding: 20px;
  }
 
+ .card {
+     margin-top: 2%;
+     align-items: center;
+     background-color:lightblue;
+     border-radius: 10px;
+     display: flex;
+     gap: 30px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     width: 300px;
+     height: 30px;
+     padding: 20px;
+ }
+
+ .card:hover h2,
+ .card:hover i {
+     color: #2E5D8A;
+     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+     transform: translateY(-5px);
+ }
+
+ .card h2 {
+     align-items: center;
+     font-size: 24px;
+     color: #333;
+     margin-bottom: 20px;
+     transition: all 0.3s ease;
+ }
+
+ .input-box {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 10px;
+     width: 300px;
+     background-color: white;
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .input-box i {
+     font-size: 30px;
+     color: #1C3F66;
+     margin-bottom: 10px;
+ }
+
+ .input-box input {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+
+ .button {
+     background-color: #1C3F66;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     border-radius: 10px;
+ }
+
+ .button:hover {
+     background-color: #2E5D8A;
+ }
+
+
+
+
  .profile {
      width: 30%;
-     background-color: white;
+     background-color:  lightblue;
      border-radius: 10px;
      padding: 20px;
      margin-bottom: 20px;
@@ -56,21 +125,25 @@
      transition: all 0.3s ease;
  }
 
- .profile:hover {
+ .profile:hover,
+ .profile:hover h2 {
+     text-shadow: #2E5D8A;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
      transform: translateY(-5px);
  }
 
  .health-box {
      width: 30%;
-     background-color: white;
+     background-color: lightblue;
      border-radius: 10px;
      padding: 20px;
      margin-bottom: 20px;
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
  }
 
- .health-box:hover {
+ .health-box:hover,
+ .health-box:hover h2 {
+     text-shadow: #2E5D8A;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
      transform: translateY(-5px);
  }
@@ -78,14 +151,16 @@
 
  .insurance-box {
      width: 30%;
-     background-color: white;
+     background-color: lightblue;
      border-radius: 10px;
      padding: 20px;
      margin-bottom: 20px;
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
  }
 
- .insurance-box:hover {
+ .insurance-box:hover,
+ .insurance-box:hover h2 {
+     text-shadow: #2E5D8A;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
      transform: translateY(-5px);
  }
@@ -112,12 +187,24 @@
      padding: 20px;
  }
 
- .cards 
- {
+ .cards {
      width: 300px;
-     background-color: white;
+     background-color:lightblue;
      border-radius: 10px;
      padding: 20px;
      margin-bottom: 20px;
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ h2 {
+     font-size: 20px;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     color: #333;
+ }
+
+ h2 i {
+     font-size: 40px;
+     color: #1C3F66;
  }
